@@ -499,11 +499,10 @@ You can charge Lithium battery for special purposes.
 \end_layout
 
 \begin_layout Subsubsection*
-Maximum safety 
+Maximum safety features
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Delta-peak
 \begin_inset space ~
 \end_inset
@@ -513,8 +512,7 @@ sensitivity: The automatic charge termination program works on the principle
  (NiCd/NiMH) 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Auto-charge
 \begin_inset space ~
 \end_inset
@@ -534,8 +532,7 @@ AUTO” mode.
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Capacity
 \begin_inset space ~
 \end_inset
@@ -549,8 +546,7 @@ limit: The charging capacity is calculated by integrating the charging current
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Temperature
 \begin_inset space ~
 \end_inset
@@ -563,8 +559,7 @@ limit: The temperature of the battery on charging will rise by its internal
  deployed because they use the same I/O port.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Processing
 \begin_inset space ~
 \end_inset
@@ -578,8 +573,7 @@ limit: You can also restrain the maximum process time to prevent damage,
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Input
 \begin_inset space ~
 \end_inset
@@ -1768,42 +1762,54 @@ It incorporates various functions of protective and monitoring system to
 Glossary of terms 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
+Amperes
+\begin_inset space ~
+\end_inset
+
+or
+\begin_inset space ~
+\end_inset
+
 Amps
 \begin_inset space ~
 \end_inset
 
 [A] The unit of measure for charge or discharge electric current.
- The program of the charger will show most of the current in amps(A) at
- its LCD screen.
+ The program of the charger will show most of the current in Amperes (A)
+ at its LCD screen.
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-Milli-amps
+\begin_layout Description
+Milliamps
 \begin_inset space ~
 \end_inset
 
-[mA] The electric current, being amps(A) multiplied by 1000 and noted as
- “mA”.
+or
+\begin_inset space ~
+\end_inset
+
+milliamperes
+\begin_inset space ~
+\end_inset
+
+[mA] The electric current of 1/1000 of an Ampere (A) and noted as “mA”.
  So 2.0A is the same as 2000mA (2.0*1000).
- Or, to convert mA to amps, divide the mA number by 1000.
- So 200mA is the same as 0.2A.
+ Or, to convert mA to Amps, divide the mA number by 1000: 200mA is the same
+ as 0.2A.
  If a current value is below 1.0A, the LCD screen of the charger will still
  show the current in amps, not milli-amps.
  For example, a current of 600mA will be displayed as 0.6A, and a current
  of 100mA will actually be shown as 0.1A.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Capacity
 \begin_inset space ~
 \end_inset
 
-milli-amp
+milliamp
 \begin_inset space ~
 \end_inset
 
@@ -1823,19 +1829,18 @@ amp-hours
 \begin_inset space ~
 \end_inset
 
-[Ah] Charge energy stored by a battery is called capacity, which is defined
- as how much current a battery can supply constantly over one hour of time.
+[Ah] Charge stored by a battery is called capacity, which is defined as
+ how much current a battery can supply constantly over one hour of time.
  Most hobby batteries are rated for capacity in “mAh” or milliamp hours.
  A 650mAh battery can deliver 650mA of current for one hour (650mA*1hr=650mAh).
  The batteries of very large capacity, such as lead-acid(Pb) batteries,
  are usually rated in “Ah” or amp-hours.
- A “12V 60Ah” car battery can deliver 60 amps of current for one hour (60Ax*1hr=
-60Ah).
+ A “12V 60Ah” car battery can deliver 60 Amperes of current for one hour
+ (60A*1hr=60Ah).
  
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Nominal
 \begin_inset space ~
 \end_inset
@@ -1849,8 +1854,7 @@ voltage
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 NiCd
 \begin_inset space ~
 \end_inset
@@ -1860,28 +1864,31 @@ or
 \end_inset
 
 NiMH: multiply the total number of cells in the pack by 1.2V.
- A 8-cell pack will have a nominal voltage of 9.6 volts (8*1.2).
+ A 8-cell pack will have a nominal voltage of 9.6 Volts (8*1.2).
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 LiPo: multiply the total number of cells in the pack by 3.6V.
- A 3-cell Lilo wired in series will have a nominal voltage of 11.1 volts
+ A 3-cell Lilo wired in series will have a nominal voltage of 11.1 Volts
  (3*3.7).
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 Lilo: multiply the total number of cells in the pack by 3.6V.
- A 2-cell Lilo wired in series will have a nominal voltage of 11.1 volts
+ A 2-cell Lilo wired in series will have a nominal voltage of 11.1 Volts
  (3*3.6).
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 LiFe: multiply the total number of cells in the pack by 3.3V.
- A 4-cell Lilo wired in series will have a nominal voltage of 11.1 volts
+ A 4-cell Lilo wired in series will have a nominal voltage of 11.1 Volts
  (4*3.3).
+ 
+\end_layout
+
+\begin_layout Description
+Pb: multiply the total number of cells in the pack by 2V.
+ A 6-cell lead-acid battery will have a nominal voltage of 12 Volts (6*2.0).
  
 \end_layout
 
@@ -1893,15 +1900,15 @@ If the nominal voltage of the battery is not printed on the battery’s label,
 \end_layout
 
 \end_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Description
 “C”-rating: Capacity is also referred to as the “C” rating.
  Some battery suppliers recommend charge and discharge currents based on
  the battery “C” rating.
- A battery’s “1C” current is the same number as the battery’ s rated capacity
- number, but noted in mA or amps.
+ A battery’s “1C” current is the same number as the battery’s rated capacity
+ number, but noted in mA or Amperes.
  A 600mAh battery has a 1C current value of 600mA, and a 3C current value
- of (3*600mA) 1800mA or 1.8A.
+ of 3*600mA, i.e.
+ 1800mA or 1.8A.
  The 1C current value for a 3200mAh battery would be 3200mA (3.2A).
  
 \end_layout
