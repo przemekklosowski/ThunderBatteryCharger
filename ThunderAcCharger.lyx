@@ -77,9 +77,33 @@ Li, Ni and Pb battery charger
 \end_layout
 
 \begin_layout Standard
-Thank you for purchasing the multi-chemistry battery charger.
- You get a rapid charger/discharger with a built-in balance, which is computeriz
-ed with a high performance microprocessor and specialized operating software.
+This multi-chemistry battery charger is a popular design produced in several
+ variants differing in small implementation details.
+ It is sold under several brand names such as Thunder 680 and AC6, Turnigy
+ Accucel-6/8 and MEGA, G.T.
+ Power, IMAX B6, etc.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This manual describes the common firmware version usually shipped with the
+ charger.
+ There's an alternative Open Source firmware at 
+\family typewriter
+https://github.com/stawel/cheali-charger
+\family default
+ that includes detailed information on hardware and firmware issues.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The charger implements a rapid charger/discharger with a built-in balance,
+ driven by a high performance Atmel AVR ATMega32 microprocessor and specialized
+ operating firmware.
  Please read this entire operating manual completely and attentively as
  it contains a wide variety of specific programming and safety information.
  
@@ -94,10 +118,10 @@ Specifications
 <lyxtabular version="3" rows="10" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="right" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="right" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -106,7 +130,7 @@ Charger model
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -115,7 +139,7 @@ Charger model
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -126,7 +150,7 @@ AC6
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -135,7 +159,7 @@ Operating voltage range
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -156,7 +180,7 @@ DC 10.0—18.0 Volt max.
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -165,7 +189,7 @@ Circuit power (charging)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -174,7 +198,7 @@ Circuit power (charging)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -185,7 +209,7 @@ Circuit power (charging)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -194,7 +218,7 @@ Circuit power (discharging)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -203,7 +227,7 @@ Circuit power (discharging)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -214,7 +238,7 @@ Circuit power (discharging)
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -223,7 +247,7 @@ Charge current range
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -232,7 +256,7 @@ Charge current range
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -243,7 +267,7 @@ Charge current range
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -252,7 +276,7 @@ Discharge current range
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -261,7 +285,7 @@ Discharge current range
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -272,7 +296,7 @@ Discharge current range
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -281,7 +305,7 @@ Current drain for balancing Li-po
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -301,7 +325,7 @@ Current drain for balancing Li-po
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -310,7 +334,7 @@ NiCd/NiMH battery cell count
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -330,7 +354,7 @@ NiCd/NiMH battery cell count
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -339,11 +363,11 @@ Lithium battery cell count
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1—6 in series 
+1—6 cells in series 
 \end_layout
 
 \end_inset
@@ -359,7 +383,7 @@ Lithium battery cell count
 </cell>
 </row>
 <row>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -368,7 +392,7 @@ Pb battery voltage
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -395,7 +419,7 @@ Pb battery voltage
 \end_layout
 
 \begin_layout Subsection*
-Special features
+Special features of the charging unit
 \end_layout
 
 \begin_layout Subsubsection*
@@ -405,10 +429,10 @@ Optimized operating software
 \begin_layout Standard
 When charging or discharging, it has an “AUTO” function that sets the feeding
  current automatically.
- Especially for Lithium batteries, it can prevent the over- charging can
- lead to an explosion by users fault.
- Every program in the unit is controlled with mutual links and communication
- for every possible error so it introduces a maximum safety.
+ Especially for Lithium batteries, it can prevent the over-charging and
+ a resulting explosive failure.
+ Every function of the unit is interconnected with communication for every
+ possible error for maximum possible operational safety.
  These can be set at users option.
  
 \end_layout
@@ -432,9 +456,9 @@ Individual voltage balancer for Lithium batteries inside
 \end_layout
 
 \begin_layout Standard
-It has an individual-cell-voltage balancer inside.
- So it does not need any balancer separately when charging Lithium batteries
- (Lilon/LiPo/LiFe) for cell voltage balancing.
+The unit has an individual-cell-voltage balancer inside, so it does not
+ need a separate balancer when charging Lithium batteries (Lilon/LiPo/LiFe)
+ for cell voltage balancing.
  
 \end_layout
 
@@ -456,9 +480,9 @@ Accept various types of Lithium battery
 
 \begin_layout Standard
 It can accept three types of Lithium batteries: Lilon, LiPo and LiFe.
- They have different characteristics by their chemistry.
- You can select any one of them that you are going to process before the
- job.
+ They have different characteristics due to their varied chemistry.
+ You can select any one of them depending on the type of the battery pack
+ being used.
  For their specifications, refer to “Warnings and safety notes” section.
  
 \end_layout
@@ -470,8 +494,7 @@ Lithium battery “Fast” and “Storage” mode
 \begin_layout Standard
 You can charge Lithium battery for special purposes.
  “Fast” charge reduces the charging time of Lithium battery and “Storage”
- mode controls the final voltage of the battery to be suit for long time
- storage.
+ mode controls the final voltage of the battery suitable for long time storage.
  
 \end_layout
 
@@ -486,7 +509,7 @@ Delta-peak
 \end_inset
 
 sensitivity: The automatic charge termination program works on the principle
- of the Delta- peak voltage detection.
+ of the Delta-peak voltage detection.
  (NiCd/NiMH) 
 \end_layout
 
@@ -500,10 +523,14 @@ current
 \begin_inset space ~
 \end_inset
 
-limit: When charging NiCd or NiMH at “AUTO” current mode, you can set the
- upper limit of charge current to avoid from high current charging.
+limit: When charging NiCd or NiMH in “AUTO” current mode, you can set the
+ upper limit of charge current to avoid high current charging.
  This is very useful when charging the low impedance and small capacity
- NiMH battery in “AUTO” mode.
+ NiMH battery in 
+\begin_inset Quotes eld
+\end_inset
+
+AUTO” mode.
  
 \end_layout
 
@@ -513,10 +540,12 @@ Capacity
 \begin_inset space ~
 \end_inset
 
-limit: The charging capacity always calculated by multiple of the charging
- current and time.
+limit: The charging capacity is calculated by integrating the charging current
+ over time.
  If the charging capacity exceeds the limit the process will be terminated
- automatically when you set the maximum value.
+ automatically when you set the maximum value, on the assumption that the
+ excessive current isn't contributing to the electrochemical charging process
+ any more but instead causes energy and/or electrolyte dissipation.
  
 \end_layout
 
@@ -530,7 +559,8 @@ limit: The temperature of the battery on charging will rise by its internal
  chemical reaction.
  If you set the limit of temperature the process will be expired forcibly
  when the limit has reached.
- 
+ NOTE: if the USB communication is used, the temperature sensor cannot be
+ deployed because they use the same I/O port.
 \end_layout
 
 \begin_layout Labeling
@@ -543,8 +573,8 @@ time
 \begin_inset space ~
 \end_inset
 
-limit: You can also restrain the maximum process time to prevent from any
- possible defect.
+limit: You can also restrain the maximum process time to prevent damage,
+ similar to the capacity limit protection.
  
 \end_layout
 
@@ -558,8 +588,9 @@ power
 \begin_inset space ~
 \end_inset
 
-monitor: To protect the car battery using as DC input power from being damaged
- the voltage of it always monitored.
+monitor: To protect e.g.
+ the car battery used as DC input power from being damaged, the input voltage
+ is always monitored.
  If it drops below the lower limit the process will be ended automatically.
  
 \end_layout
@@ -569,11 +600,10 @@ Data store/load
 \end_layout
 
 \begin_layout Standard
-For users convenience it can store maximum 5 data of different batteries.
- You can establish the data contains program setting of the battery to charge
- or discharge continually.
- These data can be called out at any time you need and the process can be
- executed without program setting.
+You can store up to 5 parameter sets for charge or discharge cycles, e.g.
+ for different batteries.
+ These data can be called out at any time and the process can be executed
+ without further program setting.
  
 \end_layout
 
@@ -582,7 +612,7 @@ Cyclic charging/discharging
 \end_layout
 
 \begin_layout Standard
-Perform 1 to 5 cycles of charge> discharge or discharge> charge continually
+Perform 1 to 5 cycles of charge→discharge or discharge→charge continually
  for battery refreshing and balancing.
  
 \end_layout
@@ -592,14 +622,16 @@ PC based analysis using USB communication
 \end_layout
 
 \begin_layout Standard
-For technical expert, the unit can send charge/discharge parameters over
- a serial/USB connection.
- There's an associated PC based program to display the characteristic of
- the battery.
- It shows a graph of voltage, current, capacity and temperature curves.
+For advanced battery diagnostics, the unit can send charge/discharge parameters
+ over a serial/USB connection.
+ There's an associated Windows-based program to display the characteristic
+ of the battery; it is also possible to use third-party software (see Appendix).
+ The provided program shows a graph of voltage, current, capacity and temperatur
+e curves.
  It also shows the individual voltage of each cell in the Lithium battery
  pack.
- Thunder 680 requires a PC-LINK USB adaptor that can be purchased separately.
+ Thunder 680 requires a TTL serial-USB adaptor that can be purchased separately;
+ Thunder AC6 has a built-in USB mini port.
 \end_layout
 
 \begin_layout Subsection*
@@ -608,9 +640,9 @@ Warnings and safety notes
 
 \begin_layout Standard
 Those warnings and safety notes are particularly important.
- Please follow the instructions for a maximum safety; otherwise the charger
- and the battery can be damaged violently.
- And also it can cause a fire to injure a human body or to lose the property.
+ Please follow the instructions for safety; otherwise the charger and the
+ battery can be damaged extensively, and cause injury and loss of property,
+ limb or life, by causing fire, explosion, chemical spills or other accidents.
  
 \end_layout
 
@@ -622,22 +654,23 @@ Never leave the charger unsupervised when it is connected to its power supply.
 \end_layout
 
 \begin_layout Enumerate
-Keep away the charger from dust, damp, rain, heat direct sunshine and vibration.
+Keep away the charger from dust, moisture, rain, heat, direct sunshine and
+ vibration.
  Do not drop it.
- 
 \end_layout
 
 \begin_layout Enumerate
-The circuit of this charger is designed to be powered by a 12V DC.
- But do not supply both input power simultaneously.
- The circuit can be damaged permanently.
+The circuit of this charger is designed to be powered by a 12V DC power
+ supply, or by line voltage.
+ Do not supply both input power sources simultaneously: the circuit can
+ be damaged permanently.
  
 \end_layout
 
 \begin_layout Enumerate
 This charger and battery to be charged and discharged should be set up on
- a head-resistant, non- inflammable and non-conductive surface.
- Never place them on a car seat, carpet or similar.
+ a head-resistant, non-flammable and non-conductive surface.
+ Never place them on a car seat, carpet or similar surfaces.
 \end_layout
 
 \begin_layout Enumerate
@@ -645,10 +678,11 @@ Keep all the inflammable volatile materials well away from operation area.
 \end_layout
 
 \begin_layout Enumerate
-Be sure to understand the information of the battery to be charged or discharged
- accurately.
- If the program is set up incorrectly the battery can severely be damaged.
- Especially Lithium battery can cause a fire or an explosion by over-charging.
+Be sure to understand the characteristics of the battery to be charged or
+ discharged accurately.
+ If the program is set up incorrectly the battery can be severely damaged.
+ In particular, Lithium batteries can cause a fire or an explosion by over-charg
+ing.
 \begin_inset Newline newline
 \end_inset
 
@@ -1001,11 +1035,10 @@ Pb (lead acid)
 \end_layout
 
 \begin_layout Enumerate
-To avoid short-circuits between the charge lead, always connect the charge
+To avoid short-circuits between the charging leads, always connect the charge
  cable to the unit first and only then to the battery to be charged or discharge
 d.
- Reverse the sequence when disconnection.
- 
+ Reverse the sequence when disconnecting 
 \end_layout
 
 \begin_layout Enumerate
@@ -1014,23 +1047,22 @@ Do not connect more than one battery pack to charge at any one time.
 \end_layout
 
 \begin_layout Enumerate
-Do not attempt to charge or discharge below types of battery: 
+Do not attempt to charge or discharge the following types of batteries:
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Battery pack, which consists of different types of cell (including different
+Battery packs consisting of different types of cells (including different
  manufacturers).
 \end_layout
 
 \begin_layout Enumerate
-Battery, which is already fully charged or just slightly discharged.
- 
+Battery which is already fully charged or just slightly discharged.
 \end_layout
 
 \begin_layout Enumerate
-Non-rechargeable batteries.
- (Explosion hazard) 
+Non-rechargeable batteries, due to a resulting explosion hazard.
 \end_layout
 
 \begin_layout Enumerate
@@ -1041,8 +1073,10 @@ Batteries that require a different charge technique from NiCd, NiMH, Lilon,
 
 \begin_layout Enumerate
 Faulty or damaged battery.
- 6)Battery fitted with an integral charge circuit or a protection circuit.
- 
+\end_layout
+
+\begin_layout Enumerate
+Battery fitted with an integral charge circuit or a protection circuit.
 \end_layout
 
 \begin_layout Enumerate
@@ -1059,19 +1093,17 @@ Batteries that are not expressly stated by the manufacturer to be suitable
 
 \end_deeper
 \begin_layout Enumerate
-Please check below point before charge operation.
+Please use the following procedures before a charge operation.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 Select the appropriate program which is suitable for the type of battery.
- 
 \end_layout
 
 \begin_layout Enumerate
 Set up adequate current for charging or discharging.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -1081,8 +1113,7 @@ Lithium battery pack can be composed with parallel and series circuits mixed.
 \end_layout
 
 \begin_layout Enumerate
-Be sure all the connections firm and safe, on intermittent contact at any
- point in the circuit
+Be sure all the connections are firm and secure at every point in the circuit.
 \end_layout
 
 \end_deeper
@@ -1092,37 +1123,49 @@ General notes on charging
 
 \begin_layout Standard
 A specific quantity of electrical energy is fed into the battery during
- charge process.
- The charge quantity is calculated by multiplying charge current by charge
- time.
+ charge process, equal to the product of battery voltage and available stored
+ charge.
+ The charge quantity is calculated by integrating the charge current over
+ the charge time.
  The maximum permissible charge current varies according to the battery
  type or its performance, and can be found in the information provided by
  the battery manufacturer.
  It is only allowed to charge batteries at rates higher than the standard
  charge current if they are expressly stated to be capable of quick-charge.
- Connect the battery to charge to output terminal of the charger using suitable
- charge lead.
- They are red, positive (+) and black, negative (-).
+\end_layout
+
+\begin_layout Standard
+Connect the charged battery to the output terminals of the charger using
+ suitable charge leads, using red for the positive (+) terminal, and black
+ for the negative (-) terminal.
  Since the charger cannot detect the difference between the internal resistance
  of the battery pack, cable resistance and connector transfer resistance,
  the first requirement if the charger to work properly is that the charge
  lead should be of adequate conductor cross-section.
- And also high- quality connectors (normally gold-contact type) must be
- fitted to both ends.
- Refer to the information provided by the battery manufacturer regarding
+ High-quality connectors (normally gold-contact type) must be fitted to
+ both ends.
+ 
+\end_layout
+
+\begin_layout Standard
+Refer to the information provided by the battery manufacturer regarding
  charging methods, and verify the recommended charge current and charge
  time.
  Especially for Lithium batteries, you have to follow the charge instruction
  provided by the manufacturer strictly.
  Do not attempt to disassemble the battery pack arbitrarily.
- You have to pay attention to verify the capacity and the voltage of the
+ 
+\end_layout
+
+\begin_layout Standard
+You have to pay attention to verify the capacity and the voltage of the
  Lithium battery pack.
  It may be composed of parallel and series connection mixed.
  In parallel link the capacity of the battery pack is multiplied by the
  number of cells but the voltage remains same.
- That kind of voltage imbalance causes a fire or explosion during charge
- process.
- We recommend you compose the Lithium battery pack in series only.
+ That could introduce voltage imbalance between cells, which could cause
+ a fire or explosion during charge process.
+ We recommend connecting the Lithium battery packs in series only.
  
 \end_layout
 
@@ -1133,13 +1176,18 @@ General notes on discharging
 \begin_layout Standard
 The typical purpose of discharge is to determine the residual capacity of
  the battery, or to lower the voltage of battery to a defined level.
- When you discharge the battery you also have to pay attention to the process
- same as charging.
- To avoid the battery becoming deep- discharged, set the final discharge
+ When you discharge the battery you also have to pay attention to the process,
+ just as when charging it.
+ To avoid the battery becoming deep-discharged, set the final discharge
  voltage correctly.
  Lithium batteries should not be deep-discharged to lower than the minimum
  voltage, as this leads to a rapid loss of capacity or a total failure.
- Generally, you do not need to discharge Lithium battery voluntarily.
+ 
+\end_layout
+
+\begin_layout Standard
+Generally, you do not need to discharge Lithium batteries for the maintenance
+ purposes.
  Some rechargeable batteries are said to have a memory effect.
  If they are partly used and recharged before the whole charge is drawn
  out, they “remember” this and next time will only use that part of their
@@ -1149,13 +1197,17 @@ The typical purpose of discharge is to determine the residual capacity of
  They prefer complete cycles; fully charge then use until empty, do not
  recharge before storage—allow them to self-discharge during storage.
  NiMH batteries have less memory effect than NiCd.
- The Lithium battery prefers a partial rather than a full discharge.
+ 
+\end_layout
+
+\begin_layout Standard
+The Lithium battery prefers a partial rather than a full discharge.
  Frequent full discharges should be avoided if possible.
  Instead, charge the battery more often or use a larger battery.
- The brand-new NiCd battery pack is partially useful with its capacity until
- it has been subjected to 10 or more charge cycles in any case.
- The cyclic process of charge and discharge will lead to optimize the capacity
- of battery pack.
+ The brand-new NiCd battery pack usually does not reach its full capacity
+ until it has been subjected to 10 or more charge cycles.
+ The cyclic process of charge and discharge will lead to optimizingthe capacity
+ of the battery pack.
  
 \end_layout
 
@@ -1503,7 +1555,7 @@ Set discharge current on the left and final voltage on the right.
 \end_layout
 
 \begin_layout Subsubsection*
-Charge-to-discharge & discharge-to- charge cycle
+Charge-to-discharge & discharge-to-charge cycle
 \end_layout
 
 \begin_layout Standard
@@ -1740,7 +1792,7 @@ Milli-amps
  Or, to convert mA to amps, divide the mA number by 1000.
  So 200mA is the same as 0.2A.
  If a current value is below 1.0A, the LCD screen of the charger will still
- show the current in amps, not milli- amps.
+ show the current in amps, not milli-amps.
  For example, a current of 600mA will be displayed as 0.6A, and a current
  of 100mA will actually be shown as 0.1A.
 \end_layout
@@ -1809,7 +1861,6 @@ or
 
 NiMH: multiply the total number of cells in the pack by 1.2V.
  A 8-cell pack will have a nominal voltage of 9.6 volts (8*1.2).
- - 
 \end_layout
 
 \begin_layout Labeling
@@ -1817,7 +1868,6 @@ NiMH: multiply the total number of cells in the pack by 1.2V.
 LiPo: multiply the total number of cells in the pack by 3.6V.
  A 3-cell Lilo wired in series will have a nominal voltage of 11.1 volts
  (3*3.7).
- -
 \end_layout
 
 \begin_layout Labeling
@@ -1825,7 +1875,6 @@ LiPo: multiply the total number of cells in the pack by 3.6V.
 Lilo: multiply the total number of cells in the pack by 3.6V.
  A 2-cell Lilo wired in series will have a nominal voltage of 11.1 volts
  (3*3.6).
- - 
 \end_layout
 
 \begin_layout Labeling
@@ -1872,7 +1921,7 @@ For the voltage of battery is more than 10V, the actual amount of charge
 \end_layout
 
 \begin_layout Subsubsection*
-Individual cell connection diagram(pin- assignment of 7-pin)
+Individual cell connection diagram(pin-assignment of 7-pin)
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1886,7 +1935,8 @@ The charger can be configured to output process parameters over the USB/serial
  probe input.
  The communication parameters are 9600 baud, 8 data bits, no parity and
  1 stop bit (9600-8N1).
- The binary data block is 74 bytes long and comprises following variables
+ Whenever the device is in active mode (charging or discharging) it streams
+ binary data block of 76 bytes
 \begin_inset Foot
 status collapsed
 
@@ -1896,12 +1946,16 @@ http://blog.dest-unreach.be/2012/01/29/imax-b6-charger-protocol-reverse-engineer
 
 \end_inset
 
-:
+ approximately every 1.5 seconds.
+ The record is wrapped around by curly braces '{}' and contains 72 data
+ bytes followed by a 2-byte checksum.
+ Each data byte MSB set and 7 bits of actual binary data, comprising the
+ following variables:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="24" columns="3">
+<lyxtabular version="3" rows="27" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1911,7 +1965,9 @@ http://blog.dest-unreach.be/2012/01/29/imax-b6-charger-protocol-reverse-engineer
 \begin_inset Text
 
 \begin_layout Plain Layout
-Variable
+
+\shape italic
+Byte Offset
 \end_layout
 
 \end_inset
@@ -1920,7 +1976,9 @@ Variable
 \begin_inset Text
 
 \begin_layout Plain Layout
-Byte
+
+\shape italic
+Content
 \end_layout
 
 \end_inset
@@ -1929,7 +1987,9 @@ Byte
 \begin_inset Text
 
 \begin_layout Plain Layout
-description
+
+\shape italic
+Description
 \end_layout
 
 \end_inset
@@ -1940,7 +2000,7 @@ description
 \begin_inset Text
 
 \begin_layout Plain Layout
-status
+0
 \end_layout
 
 \end_inset
@@ -1949,7 +2009,36 @@ status
 \begin_inset Text
 
 \begin_layout Plain Layout
+beginning of record
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+opening curly brace '{'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+status
 \end_layout
 
 \end_inset
@@ -1969,7 +2058,7 @@ charging/discharging/cycling
 \begin_inset Text
 
 \begin_layout Plain Layout
-NiCd charge current
+8
 \end_layout
 
 \end_inset
@@ -1978,7 +2067,7 @@ NiCd charge current
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+NiCd charge current
 \end_layout
 
 \end_inset
@@ -1994,15 +2083,6 @@ NiCd charge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NiCd discharge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2012,6 +2092,15 @@ NiCd discharge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NiCd discharge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2023,15 +2112,6 @@ NiCd discharge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NiMH charge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2041,6 +2121,15 @@ NiMH charge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NiMH charge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2052,15 +2141,6 @@ NiMH charge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NiMH discharge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2070,6 +2150,15 @@ NiMH discharge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NiMH discharge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2081,15 +2170,6 @@ NiMH discharge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-cycle mode
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2099,6 +2179,15 @@ cycle mode
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cycle mode
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2110,15 +2199,6 @@ cycle mode
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-cycle count
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2128,6 +2208,15 @@ cycle count
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cycle count
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2139,15 +2228,6 @@ cycle count
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Li charge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2157,6 +2237,15 @@ Li charge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Li charge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2168,15 +2257,6 @@ Li charge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Li charge cell count
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2186,6 +2266,15 @@ Li charge cell count
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Li charge cell count
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2197,15 +2286,6 @@ Li charge cell count
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Li discharge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2215,6 +2295,15 @@ Li discharge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Li discharge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2226,15 +2315,6 @@ Li discharge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Li discharge cell count
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2244,6 +2324,15 @@ Li discharge cell count
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Li discharge cell count
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2255,15 +2344,6 @@ Li discharge cell count
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pb charge current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2273,6 +2353,15 @@ Pb charge current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pb charge current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2284,15 +2373,6 @@ Pb charge current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pb cell count
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2302,6 +2382,15 @@ Pb cell count
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pb cell count
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2317,7 +2406,7 @@ Pb cell count
 \begin_inset Text
 
 \begin_layout Plain Layout
-Configuration
+22
 \end_layout
 
 \end_inset
@@ -2326,7 +2415,7 @@ Configuration
 \begin_inset Text
 
 \begin_layout Plain Layout
-22
+Configuration
 \end_layout
 
 \end_inset
@@ -2346,7 +2435,7 @@ Config/Li/NiMH/NiCd/Pb/Save/Load
 \begin_inset Text
 
 \begin_layout Plain Layout
-Running state
+23
 \end_layout
 
 \end_inset
@@ -2355,7 +2444,7 @@ Running state
 \begin_inset Text
 
 \begin_layout Plain Layout
-23
+Running state
 \end_layout
 
 \end_inset
@@ -2375,7 +2464,7 @@ running/standby
 \begin_inset Text
 
 \begin_layout Plain Layout
-NiMH discharge voltage
+24,25
 \end_layout
 
 \end_inset
@@ -2384,7 +2473,7 @@ NiMH discharge voltage
 \begin_inset Text
 
 \begin_layout Plain Layout
-24,25
+NiMH discharge voltage
 \end_layout
 
 \end_inset
@@ -2400,15 +2489,6 @@ NiMH discharge voltage
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-NiCd discharge voltage
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2418,6 +2498,15 @@ NiCd discharge voltage
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NiCd discharge voltage
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2429,15 +2518,6 @@ NiCd discharge voltage
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-output current
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2447,6 +2527,15 @@ output current
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+output current
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2458,15 +2547,6 @@ output current
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-output voltage
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2476,6 +2556,15 @@ output voltage
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+output voltage
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2487,15 +2576,6 @@ output voltage
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-input voltage
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2505,6 +2585,15 @@ input voltage
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+input voltage
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2516,15 +2605,6 @@ input voltage
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-charge state [mAh]
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -2534,6 +2614,15 @@ charge state [mAh]
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+charge state [mAh]
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -2549,7 +2638,7 @@ charge state [mAh]
 \begin_inset Text
 
 \begin_layout Plain Layout
-Li cell voltages
+44-55
 \end_layout
 
 \end_inset
@@ -2558,7 +2647,7 @@ Li cell voltages
 \begin_inset Text
 
 \begin_layout Plain Layout
-44-55
+Li cell voltages
 \end_layout
 
 \end_inset
@@ -2574,16 +2663,7 @@ cells 1-6
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-elapsed time [min]
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2592,11 +2672,78 @@ elapsed time [min]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+elapsed time [min]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73-74
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+checksum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+end of record
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+closing curly brace '}'
 \end_layout
 
 \end_inset
@@ -2610,7 +2757,7 @@ elapsed time [min]
 \end_layout
 
 \begin_layout Standard
-There's a Python decoder 
+There's a Python decoder
 \begin_inset Foot
 status collapsed
 
@@ -2620,11 +2767,13 @@ https://github.com/LateralGs/accucell_6_logger
 
 \end_inset
 
- that reads this and prints out a CSV-formatted data stream containing the
- following variables:
+ that reads this data and prints out a CSV-formatted data stream containing
+ timestamp (in seconds since UNIX epoch), status, voltage (in Volts), current
+ (Amperes) and cumulative charge in mAh.
+ Optionally, more values can be printed out in verbose mode:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 timestamp, status, voltage, current, charge_mah, cell_0_voltage, cell_1_voltage,
  cell_2_voltage, cell_3_voltage, cell_4_voltage, cell_5_voltage, checksum,
  checksum_local, cycle_count, cycle_mode, cycle_mode_chg_dis, cycle_mode_dis_chg
@@ -2633,6 +2782,99 @@ t, li_discharge_current, mode, mode_name, nicd_charge_current, nicd_discharge_cu
 rrent, nicd_discharge_voltage, nimh_charge_current, nimh_discharge_current,
  nimh_discharge_voltage, pb_charge_current, run,state, state_charging, state_cyc
 le, time_minutes 
+\end_layout
+
+\begin_layout Standard
+The CSV data can be read conveniently into many applications, for instance
+ into a sqlite database:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+> sqlite3 charging.db
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+.mode csv
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+.import chargingData.csv data
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+select * from data;
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+...
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+.exit
+\end_layout
+
+\begin_layout Standard
+or Octave numerical and plotting environment:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+> octave
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+a=csvread('chargingData4');
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+a(1:10,:)=[]; # delete some points from the beginning
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+t=a(:,1)-a(1,1); # recalculate time to origin at t=0
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+v=a(:,3); # extract voltage v, current i and charge c
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+i=filter(ones(1,10)/10,1,a(:,4)); # 10pt smooting window
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+c=a(:,5);
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+plot(t,[v-6,i,c]) # plot all three quantities
 \end_layout
 
 \end_body
