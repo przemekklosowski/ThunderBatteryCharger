@@ -77,6 +77,19 @@ Li, Ni and Pb battery charger
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Specifications and features
+\end_layout
+
+\begin_layout Standard
 This multi-chemistry battery charger is a popular design produced in several
  variants differing in small implementation details.
  It is sold under several brand names such as Thunder 680 and AC6, Turnigy
@@ -109,16 +122,12 @@ The charger implements a rapid charger/discharger with a built-in balance,
  
 \end_layout
 
-\begin_layout Subsection*
-Specifications 
-\end_layout
-
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="right" valignment="top" width="0pt">
-<column alignment="right" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
 <row>
 <cell alignment="right" valignment="top" usebox="none">
@@ -130,11 +139,11 @@ Charger model
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-680
+Thunder 680
 \end_layout
 
 \end_inset
@@ -143,7 +152,7 @@ Charger model
 \begin_inset Text
 
 \begin_layout Plain Layout
-AC6
+Thunder AC6
 \end_layout
 
 \end_inset
@@ -189,7 +198,7 @@ Circuit power (charging)
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -218,7 +227,7 @@ Circuit power (discharging)
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -247,7 +256,7 @@ Charge current range
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -276,7 +285,7 @@ Discharge current range
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -418,12 +427,8 @@ Pb battery voltage
 
 \end_layout
 
-\begin_layout Subsection*
-Special features of the charging unit
-\end_layout
-
-\begin_layout Subsubsection*
-Optimized operating software 
+\begin_layout Subsection
+Firmware features 
 \end_layout
 
 \begin_layout Standard
@@ -442,23 +447,23 @@ Dual input power
 \end_layout
 
 \begin_layout Standard
-It employs the circuit that maximum output power of 50W for charging.
+The power supply circuit provides up to 50W for charging.
  As a result, it can charge up to 15 cells of NiCd/NiMH and 6 series of
  Lithium batteries with maximum current of 5A.
- But there might be the limit of feeding current to a higher voltage of
- battery.
+ However, here might be the limit of feeding current to a higher voltage
+ of battery.
  Please refer to “Maximum circuit power charge”.
  
 \end_layout
 
 \begin_layout Subsubsection*
-Individual voltage balancer for Lithium batteries inside 
+Individual voltage balancer for Lithium batteries
 \end_layout
 
 \begin_layout Standard
-The unit has an individual-cell-voltage balancer inside, so it does not
- need a separate balancer when charging Lithium batteries (Lilon/LiPo/LiFe)
- for cell voltage balancing.
+The unit contains an individual-cell-voltage balancer, so it does not need
+ a separate balancer when charging Lithium batteries (Lilon/LiPo/LiFe) for
+ cell voltage balancing.
  
 \end_layout
 
@@ -467,7 +472,7 @@ Balance individual cells on discharge
 \end_layout
 
 \begin_layout Standard
-It also can monitor and balance individual cells of the Lithium battery
+The unit can monitor and balance individual cells of the Lithium battery
  pack during the discharge process.
  If the voltage of any one cell varies abnormally, the process will be stopped
  with the error message.
@@ -475,11 +480,11 @@ It also can monitor and balance individual cells of the Lithium battery
 \end_layout
 
 \begin_layout Subsubsection*
-Accept various types of Lithium battery 
+Accept various types of Lithium batteries
 \end_layout
 
 \begin_layout Standard
-It can accept three types of Lithium batteries: Lilon, LiPo and LiFe.
+Three types of Lithium batteries are supported: Li-lon, LiPo and LiFe.
  They have different characteristics due to their varied chemistry.
  You can select any one of them depending on the type of the battery pack
  being used.
@@ -499,7 +504,46 @@ You can charge Lithium battery for special purposes.
 \end_layout
 
 \begin_layout Subsubsection*
-Maximum safety features
+Data store/load
+\end_layout
+
+\begin_layout Standard
+You can store up to 5 parameter sets for charge or discharge cycles, e.g.
+ for different batteries.
+ These data can be called out at any time and the process can be executed
+ without further program setting.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Cyclic charging/discharging
+\end_layout
+
+\begin_layout Standard
+Perform 1 to 5 cycles of charge→discharge or discharge→charge continually
+ for battery refreshing and balancing.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+PC based analysis using USB communication 
+\end_layout
+
+\begin_layout Standard
+For advanced battery diagnostics, the unit can send charge/discharge parameters
+ over a serial/USB connection.
+ There's an associated Windows-based program to display the characteristic
+ of the battery; it is also possible to use third-party software (see Appendix).
+ The provided program shows a graph of voltage, current, capacity and temperatur
+e curves.
+ It also shows the individual voltage of each cell in the Lithium battery
+ pack.
+ Thunder 680 requires a TTL serial-USB adaptor that can be purchased separately;
+ Thunder AC6 has a built-in USB mini port.
+\end_layout
+
+\begin_layout Subsection
+Important safety features
 \end_layout
 
 \begin_layout Description
@@ -589,46 +633,7 @@ monitor: To protect e.g.
  
 \end_layout
 
-\begin_layout Subsubsection*
-Data store/load
-\end_layout
-
-\begin_layout Standard
-You can store up to 5 parameter sets for charge or discharge cycles, e.g.
- for different batteries.
- These data can be called out at any time and the process can be executed
- without further program setting.
- 
-\end_layout
-
-\begin_layout Subsubsection*
-Cyclic charging/discharging
-\end_layout
-
-\begin_layout Standard
-Perform 1 to 5 cycles of charge→discharge or discharge→charge continually
- for battery refreshing and balancing.
- 
-\end_layout
-
-\begin_layout Subsubsection*
-PC based analysis using USB communication 
-\end_layout
-
-\begin_layout Standard
-For advanced battery diagnostics, the unit can send charge/discharge parameters
- over a serial/USB connection.
- There's an associated Windows-based program to display the characteristic
- of the battery; it is also possible to use third-party software (see Appendix).
- The provided program shows a graph of voltage, current, capacity and temperatur
-e curves.
- It also shows the individual voltage of each cell in the Lithium battery
- pack.
- Thunder 680 requires a TTL serial-USB adaptor that can be purchased separately;
- Thunder AC6 has a built-in USB mini port.
-\end_layout
-
-\begin_layout Subsection*
+\begin_layout Subsection
 Warnings and safety notes 
 \end_layout
 
@@ -684,11 +689,11 @@ ing.
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="5">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="20col%">
+<column alignment="center" valignment="top" width="15col%">
+<column alignment="center" valignment="top" width="15col%">
+<column alignment="center" valignment="top" width="15col%">
+<column alignment="center" valignment="top" width="16col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -703,7 +708,7 @@ Battery chemistry
 \begin_inset Text
 
 \begin_layout Plain Layout
-cell volt.
+cell voltage
 \end_layout
 
 \end_inset
@@ -713,7 +718,7 @@ cell volt.
 
 \begin_layout Plain Layout
 max.
- volt.
+ cell volage
 \end_layout
 
 \end_inset
@@ -732,7 +737,7 @@ max.
 \begin_inset Text
 
 \begin_layout Plain Layout
-discharge volt.
+discharged voltage
 \end_layout
 
 \end_inset
@@ -1111,7 +1116,7 @@ Be sure all the connections are firm and secure at every point in the circuit.
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection*
+\begin_layout Subsection
 General notes on charging 
 \end_layout
 
@@ -1120,12 +1125,11 @@ A specific quantity of electrical energy is fed into the battery during
  charge process, equal to the product of battery voltage and available stored
  charge.
  The charge quantity is calculated by integrating the charge current over
- the charge time.
- The maximum permissible charge current varies according to the battery
- type or its performance, and can be found in the information provided by
- the battery manufacturer.
+ the charging time.
+ The maximum permissible charge current depends on the battery type, and
+ is usually provided by the battery manufacturer.
  It is only allowed to charge batteries at rates higher than the standard
- charge current if they are expressly stated to be capable of quick-charge.
+ charge current if they are expressly stated to be capable of quick-charging.
 \end_layout
 
 \begin_layout Standard
@@ -1134,8 +1138,8 @@ Connect the charged battery to the output terminals of the charger using
  for the negative (-) terminal.
  Since the charger cannot detect the difference between the internal resistance
  of the battery pack, cable resistance and connector transfer resistance,
- the first requirement if the charger to work properly is that the charge
- lead should be of adequate conductor cross-section.
+ the first requirement for the charger to work properly is that the charge
+ lead should have adequate conductor cross-section.
  High-quality connectors (normally gold-contact type) must be fitted to
  both ends.
  
@@ -1154,7 +1158,7 @@ Refer to the information provided by the battery manufacturer regarding
 \begin_layout Standard
 You have to pay attention to verify the capacity and the voltage of the
  Lithium battery pack.
- It may be composed of parallel and series connection mixed.
+ It may be composed of a mix of parallel and series connected cells.
  In parallel link the capacity of the battery pack is multiplied by the
  number of cells but the voltage remains same.
  That could introduce voltage imbalance between cells, which could cause
@@ -1163,13 +1167,14 @@ You have to pay attention to verify the capacity and the voltage of the
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 General notes on discharging 
 \end_layout
 
 \begin_layout Standard
-The typical purpose of discharge is to determine the residual capacity of
- the battery, or to lower the voltage of battery to a defined level.
+The typical purpose of the discharge mode of this instrument is to determine
+ the residual capacity of the battery, or to lower the voltage of battery
+ to a defined level.
  When you discharge the battery you also have to pay attention to the process,
  just as when charging it.
  To avoid the battery becoming deep-discharged, set the final discharge
@@ -1205,11 +1210,26 @@ The Lithium battery prefers a partial rather than a full discharge.
  
 \end_layout
 
-\begin_layout Subsubsection*
-Program flow chart 
+\begin_layout Section
+Device operation
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
+Firmware function flow chart 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename firmwareFunctionDiagram.png
+	lyxscale 30
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Initial parameter set up (Users set up) 
 \end_layout
 
@@ -1295,7 +1315,7 @@ n.
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Lithium battery (Lilo/LiPo/Life) program 
 \end_layout
 
@@ -1489,7 +1509,7 @@ The processor monitors the voltage of individual cells during “storage-mode”
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 NiMH/NiCd battery program 
 \end_layout
 
@@ -1574,7 +1594,7 @@ s of the battery at each cyclic Display process.
  DCHG 1 1314mAh CHG 1 1430mAh 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Pb (lead-sulphuric acid) battery program 
 \end_layout
 
@@ -1634,22 +1654,26 @@ Pb DISCHARGE 1.0A 12.0V(6P) - + DEC INC Batt type Stop Display - + DEC INC
  Pb-6 0.4A 12.59V DSC 022:43 00682 
 \end_layout
 
+\begin_layout Subsection
+Save and Load Parameters
+\end_layout
+
 \begin_layout Subsubsection*
 Save Data program 
 \end_layout
 
 \begin_layout Standard
-It has a data storage and load program for your convenience.
- This feature can store up to 5 battery data by number that represent the
- individual specification of batteries you are using.
- They can be called back for the process of charging or discharging without
- setting up the program again.
+The instrument has a data storage and load function for your convenience.
+ This feature can store up to 5 battery parameter sets.
+ They can be called back to quickly set up all parameters for the process
+ of charging or discharging, rather than entering the individual parameters
+ one by one.
  To set up the parameter value in the program, press Start/Enter key to
- make it blink then change the value with INC or DEC key.
+ make it blink, then change the value with INC or DEC key.
  PROGRAM SELECT SAVE DATA Display Start Enter SAVE [01] NiMH 14.4V 3000mAh
  Display voltage data number Batt type Stop type of battery capacity Start
- '>3 seconds' Enter The parameter value setting up in this screen d o s
- e n o t a ff e c t c h a r g e or discharge process.
+ '>3 seconds' Enter The parameter value setting up in this screen does n
+ ot affect charge or discharge process.
  They only represent the specification of the battery.
  The following screens will automatically be displayed exactly matched with
  the battery type you set up.
@@ -1675,10 +1699,10 @@ Load Data program
 \end_layout
 
 \begin_layout Standard
-This program calls back the data that was stored at “Save Data” program.
- To load the data, press Start/Enter key once to blink the data number field
- and select the number using INC or DEC key then press Start/Enter key for
- more than 3 seconds.
+This function calls back the data that was stored at “Save Data” program.
+ To load the data, press Start/Enter key once to activate the data number
+ field and select the number using INC or DEC key, then press Start/Enter
+ key for more than 3 seconds.
  PROGRAM SELECT LOAD DATA Display Start Enter LOAD [01] NiMH 14.4V 3000mAh
  Display Start '>3 seconds' Enter Select the data number to be called back.
  The data matched with the number will be displayed at this time.
@@ -1689,76 +1713,183 @@ This program calls back the data that was stored at “Save Data” program.
  Display
 \end_layout
 
-\begin_layout Subsubsection*
-Various information during the process
+\begin_layout Subsection
+Monitoring the charging/discharging process
 \end_layout
 
 \begin_layout Standard
-You can inquire various information on LCD screen during charging or discharging
- process.
- When you press DEC button the charger shows the establishment of user settings.
- And also you can monitor the voltage of individual cell by pressing INC
- button when the individual connection cable is linked to the Lithium battery
+You can view multiple process parameters on the LCD screen during charging
+ or discharging.
+ When you press DEC button the charger shows the user settings.
+ You can monitor the voltage of individual cells by pressing INC button
+ when the individual cell connection cable is linked to the Lithium battery
  being processed.
- End Voltage 12.6(3S) Display The final voltage will be reached at the end
- of process.
- DEC Capacity Cut-Off ON 5000mAh Display DEC Safety ON Timer 200min Display
- DEC The 3-pin port is assigned as an USBport.
- USB/Temp Select USB Enabled Display DEC Display The external temperature
- only will be displayed when using the thermal probe.
- IN Power Voltage 12.56V The present voltage of input power.
- Ext.Temp 26C DEC Display DEC 4.14 0.00 4.16 0.00 4.09 0.00 Display Using the individua
-l conne ction cable to the battery, you can check the individual voltages
- of each cell in the battery pack.
- When connect the cable to the port on the right side of the charger the
- program shows the voltage of each cells for maximum 6 cells in sequence.
- To utilize this feature, the battery pack must have output connector that
- linked to each cells.
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Standard
+End Voltage 12.6(3S) Display The final voltage will be reached at the end
+ of process.
+ DEC 
+\end_layout
+
+\begin_layout Standard
+Capacity Cut-Off ON 5000mAh Display DEC 
+\end_layout
+
+\begin_layout Standard
+Safety ON Timer 200min Display DEC 
+\end_layout
+
+\begin_layout Standard
+The 3-pin port is assigned as an USBport.
+ USB/Temp Select USB Enabled Display DEC 
+\end_layout
+
+\begin_layout Standard
+Display The external temperature only will be displayed when using the thermal
+ probe.
+ IN Power Voltage 12.56V The present voltage of input power.
+ 
+\end_layout
+
+\begin_layout Standard
+Ext.Temp 26C DEC 
+\end_layout
+
+\begin_layout Standard
+Display DEC 4.14 0.00 4.16 0.00 4.09 0.00 Display Using the individual cell connection
+ cable to the battery, you can check the individual voltages of each cell
+ in the battery pack.
+ When connect the cable to the port on the right side of the charger the
+ program shows the voltage of each cells for maximum 6 cells in sequence.
+ To utilize this feature, the battery pack must have an output connector
+ that links to each cell.
+ 
+\end_layout
+
+\begin_layout Subsection
 Warning and error messages 
 \end_layout
 
 \begin_layout Standard
-It incorporates various functions of protective and monitoring system to
- verify functions and the state of its electronics.
- In any case of occurring error, the screen displays the cause of error
- that is self-explanatory with audible sound.
- REVERSE POLARITY Display The output is connected to a battery with incorrect
+The charger instrument monitors process parameters to verify internal operation
+ functions and the state of its electronics.
+ When it detects an error, the screen displays the error message and an
+ audible alarm sounds.
+ 
+\end_layout
+
+\begin_layout Standard
+REVERSE POLARITY Display The output is connected to a battery with incorrect
  polarity.
- This will be displayed in case of detecting an interruption of the Display
- connection between battery and output or voluntarily disconnecting the
- charge lead during the operation of charge or discharge on output.
- CONNECTION BREAK SHORT ERR Display There was a short-circuit at OUTPUT.
+ 
+\end_layout
+
+\begin_layout Standard
+CONNECTION BREAK This will be displayed in case of detecting an interruption
+ of the Display connection between battery and output or voluntarily disconnecti
+ng the charge lead during the operation of charge or discharge on output.
+\end_layout
+
+\begin_layout Standard
+SHORT ERR Display There was a short-circuit at OUTPUT.
  Please check the charging leads.
- INPUT VOL ERR The voltage of input power lowers the limit.
- Display VOL SELECT ERR Display BREAK DOWN Display BATTERY CHECK LOW VOLTAGE
- Display BATTERY CHECK HIGH VOLTAGE Display BATTERY VOLTAGE CELL LOW VOL
- Display The voltage of Lithium battery pack was selected incorrectly.
+ 
+\end_layout
+
+\begin_layout Standard
+INPUT VOL ERR The voltage of input power lowers the limit.
+ Display 
+\end_layout
+
+\begin_layout Standard
+VOL SELECT ERR The voltage of Lithium battery pack was selected incorrectly.
  Verify the voltage of battery pack carefully.
- There happens malfunction at the charger circuit by any reason.
- The processor detects the voltage is lower than you set at Lithium program.
+ Display 
+\end_layout
+
+\begin_layout Standard
+BREAK DOWN Display There happens malfunction at the charger circuit by any
+ reason
+\end_layout
+
+\begin_layout Standard
+BATTERY CHECK LOW VOLTAGE Display The processor detects the voltage is lower
+ than you set at Lithium program.
  Please check the cell count of the cell one by one.
- The processor detects the voltage is higher than you set at Lithium program.
+\end_layout
+
+\begin_layout Standard
+BATTERY CHECK HIGH VOLTAGE Display The processor detects the voltage is
+ higher than you set at Lithium program.
  Please check the cell count of the cell one by one.
- The voltage of one of the cell in the Lithium battery pack is too low.
+\end_layout
+
+\begin_layout Standard
+BATTERY VOLTAGE CELL LOW VOL The voltage of one of the cell in the Lithium
+ battery pack is too low.
  Please check the voltage of the cell one by one.
- BATTERY VOLTAGE CELL HIGH VOL Display BATTERY VOL ERR CELL CONNECT Display
- TEMP OVER ERR Display CONTROL FAILURE Display The voltage of one of the
- cell in the Lithium battery pack is too high.
+ 
+\end_layout
+
+\begin_layout Standard
+BATTERY VOLTAGE CELL HIGH VOL Display The voltage of one of the cell in
+ the Lithium battery pack is too high.
  Please check the voltage of the cell one by one.
- There are bad connection at the individual connector.
+\end_layout
+
+\begin_layout Standard
+BATTERY VOL ERR CELL CONNECT Display There are bad connection at the individual
+ connector.
  Please check the connector and cables carefully.
- The internal temperature of the unit goes too high.
+\end_layout
+
+\begin_layout Standard
+TEMP OVER ERR Display The internal temperature of the unit goes too high.
  Cool down the unit.
+ 
+\end_layout
+
+\begin_layout Standard
+CONTROL FAILURE Display .
  The processor can not continue to control the feeding current by any reason.
  The unit needs to be repaired.
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
+Maximum circuit power 
+\end_layout
+
+\begin_layout Standard
+If the battery voltage is more than 10V, the actual amount of charge current
+ delivered to the battery might automatically be limited so that it does
+ not exceed the charger’s maximum rated charging power (e.g.
+ 50 Watts for Thunder 680).
+ Additionally, if the battery voltage is more than 5V, the discharge current
+ delivered to the battery might be limited by the maximum rated discharge
+ power (e.g.
+ 5 Watts for Thunder 680).
+ 
+\end_layout
+
+\begin_layout Subsection
+Individual cell readout 7-pin connector
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename individualCellConnection.png
+	lyxscale 30
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Glossary of terms 
 \end_layout
 
@@ -1913,25 +2044,7 @@ If the nominal voltage of the battery is not printed on the battery’s label,
  
 \end_layout
 
-\begin_layout Subsubsection*
-Maximum circuit power chart 
-\end_layout
-
-\begin_layout Standard
-For the voltage of battery is more than 10V, the actual amount of charge
- current delivered to the battery might automatically be limited so not
- to exceed the charger’s maximum rated charging power of 50 watts.
- And also, for the battery having more than 5V, the discharge current delivered
- to the battery might be limited by the maximum rated discharge power of
- 5 watts.
- The actual feeding current will be as follow; 
-\end_layout
-
-\begin_layout Subsubsection*
-Individual cell connection diagram(pin-assignment of 7-pin)
-\end_layout
-
-\begin_layout Subsubsection*
+\begin_layout Section
 USB communications
 \end_layout
 
@@ -1953,11 +2066,24 @@ http://blog.dest-unreach.be/2012/01/29/imax-b6-charger-protocol-reverse-engineer
 
 \end_inset
 
- approximately every 1.5 seconds.
- The record is wrapped around by curly braces '{}' and contains 72 data
+ approximately every 1.48 seconds.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This is the average time difference between samples from my charger; it
+ could be different for other units.
+ This value is an important instrument constant because it enters into the
+ calculation of time-integrated current, and allows comparing it to the
+ reported transferred charge.
+\end_layout
+
+\end_inset
+
+ The record starts and ends with curly braces '{}' and contains 72 data
  bytes followed by a 2-byte checksum.
- Each data byte MSB set and 7 bits of actual binary data, comprising the
- following variables:
+ Each data byte MSB is set and the remaining 7 bits contain actual binary
+ data, comprising the following variables:
 \end_layout
 
 \begin_layout Standard
@@ -2775,9 +2901,10 @@ https://github.com/LateralGs/accucell_6_logger
 \end_inset
 
  that reads this data and prints out a CSV-formatted data stream containing
- timestamp (in seconds since UNIX epoch), status, voltage (in Volts), current
- (Amperes) and cumulative charge in mAh.
- Optionally, more values can be printed out in verbose mode:
+ a timestamp (in seconds since UNIX epoch), the process status, voltage
+ in Volts, current in Amperes, and cumulative charge in mAh.
+ Optionally, more values can be printed out in verbose mode; the full list
+ is:
 \end_layout
 
 \begin_layout Verse
@@ -2799,37 +2926,43 @@ The CSV data can be read conveniently into many applications, for instance
 \begin_layout Quote
 
 \family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 > sqlite3 charging.db
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 .mode csv
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 .import chargingData.csv data
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 select * from data;
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 ...
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 .exit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2839,49 +2972,53 @@ or Octave numerical and plotting environment:
 \begin_layout Quote
 
 \family typewriter
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
 > octave
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 a=csvread('chargingData4');
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
-a(1:10,:)=[]; # delete some points from the beginning
+a(1:10,:)=[];     # delete some points from the beginning
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
-t=a(:,1)-a(1,1); # recalculate time to origin at t=0
+t=a(:,1)-a(1,1);  # recalculate time to origin at t=0
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
-v=a(:,3); # extract voltage v, current i and charge c
+v=a(:,3);         # extract voltage v, current i and charge c
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
-i=filter(ones(1,10)/10,1,a(:,4)); # 10pt smooting window
+i=filter(ones(1,10)/10,1,a(:,4));   # 10pt smooting window
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 c=a(:,5);
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
 
-\family typewriter
 plot(t,[v-6,i,c]) # plot all three quantities
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
